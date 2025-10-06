@@ -1,6 +1,6 @@
 # Serial Lock
 
-A lightweight JavaScript utility that ensures only **one browser tab** can talk to a serial device at a time. Built with `BroadcastChannel` and `localStorage` — perfect for ham radio and Web Serial API applications.
+A lightweight JavaScript utility that ensures only **one browser tab** when you have more then one of the same app open can talk to a serial device at a time. Built with `BroadcastChannel` and `localStorage` — perfect for ham radio and Web Serial API applications.
 
 ## Features
 - Cross-tab ownership management
