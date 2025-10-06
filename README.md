@@ -8,13 +8,15 @@ A lightweight JavaScript utility that ensures only **one browser tab** when you 
 - Request and release takeover flow
 - Zero dependencies
 
-## Usage
-```js
+## Quick Start
+```html
+<script type="module">
 import { SerialLock } from './src/serial-lock.js';
 
 const lock = new SerialLock({
-  onBecameOwner: () => console.log('You now control the rig'),
-  onLostOwnership: () => console.log('Lost control'),
+  onBecameOwner: () => console.log('This tab is now owner'),
+  onLostOwnership: () => console.log('Lost ownership')
 });
 
-await lock.claim(); // try to become owner
+await lock.claim();
+</script>
